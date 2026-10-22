@@ -1,10 +1,9 @@
 package org.goit.game.refactor.controller;
 
+import java.util.Scanner;
 import org.goit.game.refactor.model.GameModel;
 import org.goit.game.refactor.model.state.GameState;
 import org.goit.game.refactor.view.GameView;
-
-import java.util.Scanner;
 
 public class GameController {
 
@@ -24,11 +23,11 @@ public class GameController {
 
         while (running) {
             state.info(view);
-            if(state.isHandleInput())
+            if (state.isHandleInput()) {
                 state.handleInput(in.nextByte());
+            }
             state.execute();
         }
-//        view.message("До побачення!");
     }
 
     public void setState(GameState s) {

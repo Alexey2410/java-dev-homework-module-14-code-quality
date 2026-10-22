@@ -5,6 +5,7 @@ import org.goit.game.refactor.model.GameModel;
 public class GameView {
 
     private GameModel model;
+
     public GameView(GameModel model) {
         this.model = model;
     }

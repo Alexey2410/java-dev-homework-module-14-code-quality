@@ -7,11 +7,12 @@ public class Board {
     public Board() {
         this(new char[]{ '1', '2', '3', '4', '5', '6', '7', '8', '9' });
     }
+
     public Board(char [] box) {
         this.box = box;
     }
 
-    public void emptyBoard(){
+    public void emptyBoard() {
         this.box = new char[]{ ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ' };
     }
 

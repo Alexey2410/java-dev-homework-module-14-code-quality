@@ -2,7 +2,6 @@ package org.goit.game.refactor;
 
 import org.goit.game.refactor.controller.GameController;
 import org.goit.game.refactor.model.GameModel;
-import org.goit.game.refactor.model.state.PlayHumanState;
 import org.goit.game.refactor.model.state.StartState;
 import org.goit.game.refactor.view.GameView;
 

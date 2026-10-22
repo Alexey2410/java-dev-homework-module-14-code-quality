@@ -6,7 +6,7 @@ public interface GameState {
 
     void info(GameView view);
 
-    default boolean isHandleInput(){
+    default boolean isHandleInput() {
         return false;
     }
 

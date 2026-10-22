@@ -3,11 +3,13 @@ package org.goit.game.refactor.model.state;
 import org.goit.game.refactor.controller.GameController;
 import org.goit.game.refactor.view.GameView;
 
-
 public class PlayRobotState implements GameState {
 
     private final GameController ctx;
-    public PlayRobotState(GameController ctx) { this.ctx = ctx; }
+
+    public PlayRobotState(GameController ctx) {
+        this.ctx = ctx;
+    }
 
     @Override
     public void info(GameView view) {
@@ -30,6 +32,7 @@ public class PlayRobotState implements GameState {
             }
         }
         ctx.getModel().getBoard().setBox(box);
-        ctx.setState( new CheckStepState(ctx));
+        ctx.setState(new CheckStepState(ctx));
     }
+
 }

@@ -11,7 +11,7 @@ public class GameModel {
 
     public GameModel() {
         board = new Board();
-        players = Arrays.asList( new Player(true), new Player(false));
+        players = Arrays.asList(new Player(true), new Player(false));
         currentPlayerIndex = 0;
     }
 
@@ -30,7 +30,8 @@ public class GameModel {
     //round robin
     public void changeCurrentPlayer() {
         currentPlayerIndex++;
-        if(currentPlayerIndex >= players.size())
+        if (currentPlayerIndex >= players.size()) {
             currentPlayerIndex = 0;
+        }
     }
 }
